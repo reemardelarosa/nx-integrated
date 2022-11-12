@@ -1,20 +1,26 @@
-# Nx package based
+# Tutorial: Integrated Monorepo
 
-Welcome to Nx Recipes!
+[![integrated monorepo](https://img.shields.io/static/v1?label=monorepo%20type&message=integrated&color=blue)](https://nx.dev/concepts/integrated-vs-package-based#integrated-repos)
 
-Here you'll find various examples to use Nx to achieve a particular goal.
+Source code for the integrated monorepo tutorial on the Nx docs:
 
-## Contributing
+- Tutorial: https://nx.dev/getting-started/integrated-repo-tutorial
+- Video: https://youtu.be/weZ7NAzB7PM
 
-That'd be amazing. Check the [Contributing](./CONTRIBUTING.md) guide for more information.
+## What's inside?
+
+Leverages the [@nrwl/js](https://nx.dev/packages/js) Nx plugin to setup an integrated monorepo with two packages, `is-even` and `is-odd`.
+
+## How to run it
+
+Install all dependencies using `npm install`. You can then run commands Like
+
+- `npx nx build is-even` to run the build for just the `is-even` package
+- `npx nx run-many --target=build` to run the `build` target for all packages in the workspaces
+- you can use `npx nx graph` to visualize the structure
 
 ## Learn more
 
-🧠 [Nx Docs](https://nx.dev)  
-👩‍💻 [Nx GitHub](https://github.com/nrwl/nx)  
-💬 [Nrwl Community Slack](https://go.nrwl.io/join-slack)  
-📹 [Nrwl Youtube Channel](https://www.youtube.com/nrwl_io)  
-🥚 [Free Egghead course](https://egghead.io/courses/scale-react-development-with-nx-4038)  
-🧐 [Need help with Angular, React, Monorepos, Lerna or Nx? Talk to us 😃](https://nrwl.io/contact-us)
-
-Also, make sure to follow [Nx](https://twitter.com/nxdevtools) on Twitter for more!
+- [Nx Docs: Integrated Repos vs. Package-based Repos](https://nx.dev/concepts/integrated-vs-package-based)
+- [Video: Packaged based vs Integrated Style - Use Nx however it works best for you](https://youtu.be/ArmERpNvC8Y)
+- [Docs: Nx Console extension](https://nx.dev/core-features/integrate-with-editors)
